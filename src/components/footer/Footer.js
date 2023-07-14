@@ -13,6 +13,7 @@ function Footer() {
       <div className="Address">
         <h3>Reach us out here</h3>
         <ol>
+          <br></br>
           <li>nbierbvk@gmail.com</li>
           <li>654656161531</li>
           <li>46, 95 abc, xyz jagah</li>
