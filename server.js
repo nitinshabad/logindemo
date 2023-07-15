@@ -16,11 +16,11 @@ app.listen(port, () => console.log("server listening on port 4000..."));
 
 const path=require("path")
 //connect express with react build
-app.use(exp.static(path.join(__dirname,'build')))
+// app.use(exp.static(path.join(__dirname,'build')))
 
-app.get('/',(req,res)=>{
-  res.sendFile(path.join(__dirname,'build','index.html'))
-})
+// app.get('/',(req,res)=>{
+//   res.sendFile(path.join(__dirname,'build','index.html'))
+// })
 //Get mongo client
 const mclient=require("mongodb").MongoClient;
 
@@ -55,10 +55,10 @@ app.use("/product-api", productApp);
 
 
 //middleware to deal with page refresh
-const pageRefresh=(request,response,next)=>{
-  response.sendFile(path.join(__dirname,'./build/index.html'))
-}
-app.use("*",pageRefresh)
+// const pageRefresh=(request,response,next)=>{
+//   response.sendFile(path.join(__dirname,'./build/index.html'))
+// }
+// app.use("*",pageRefresh)
 
 
 
